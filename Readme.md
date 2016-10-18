@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Evgeniy Kobrikov](https://up.htmlacademy.ru/htmlcss/15/user/234035).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Болтян](https://htmlacademy.ru/profile/id83202).
 
 ---
 
