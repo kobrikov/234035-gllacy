@@ -6,3 +6,347 @@ body {
     color: #ffffff;
     background-color: #9bafa4;
 }
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60.35px;
+    margin-bottom: 29px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.index-logo {
+    float: left;
+    margin-right: 30px;
+}
+
+.index-logo img {
+    width: 154px;
+    height: 64px;
+}
+
+.main-navigation {
+    float: left;
+}
+
+.main-navigation a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 27px;
+}
+
+.hmenu {
+    padding: 0;
+}
+
+.hmenu li {
+    display: inline-block;
+}
+
+.user-block {
+    float: right;
+}
+
+.user-block a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.user-info {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.ui-time {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.ui-tel {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.slider {
+    position: relative;
+    margin-bottom: 37px;
+}
+
+.background {
+    background-image: url("../img/icecream-main.png");
+    background-repeat: no-repeat;
+    background-position: 50% 84px;
+    background-size: 647px 584px;
+}
+
+.toggle {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.promo {
+    margin-top: 275px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e74b36;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #e74b36, #f26843);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border: 0px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.main-btn {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 40px;
+}
+
+.promo-banner-item {
+    width: 560px;
+    border: 1px solid red;
+}
+
+.promo-left {
+    float: left;
+    background-image: url("../img/raspberry-back.png");
+    background-size: 560px 229px;
+    border-radius: 20px;
+}
+
+.promo-right {
+    float: right;
+    background-image: url("../img/chocolate-back.png");
+    background-size: 560px 229px;
+    border-radius: 20px;
+}
+
+.banner {
+    display: block;
+    margin-bottom: 37px;
+}
+
+.index-hit {
+    display: block;
+    margin-bottom: 37px;
+    font-size: 0;
+}
+
+.index-hit-item {
+    display: inline-block;
+    width: 267px;
+    position: relative;
+    margin-right: 26px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.index-hit-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.price {
+    position: absolute;
+    top: 150px;
+    font-size: 46px;
+    line-height: 45px;
+ }
+
+ .hide {
+     display: none;
+ }
+
+ .features {
+     display: block;
+     background-image: url("../img/wafer-back.jpg");
+     border-radius: 20px;
+     color: #323232;
+     margin-bottom: 37px;
+ }
+
+ .features-name {
+     font-size: 24px;
+     line-height: 30px;
+     padding-top: 38px;
+     padding-left: 15px;
+ }
+
+ .features-left {
+     float: left;
+     width: 560px;
+     margin-left: 20px;
+ }
+
+ .features-right {
+     float: right;
+     width: 560px;
+     margin-right: 20px;
+ }
+
+ .features-item * {
+     float: left;
+ }
+
+ .features-item p {
+     width: 501px;
+     padding: 5px;
+ }
+
+ .index-new {
+     float: left;
+     background-image: url("../img/strawberry-back.jpg");
+     border-radius: 20px;
+     width: 560px;
+     min-height: 220px;
+     color: #323232;
+ }
+
+ .index-mail {
+     float: right;
+     background-image: url("../img/mail-back.jpg");
+     border-radius: 20px;
+     padding: 6px;
+ }
+
+ .inner-mail {
+     background-color: #f8f7f4;
+     color: #5a5a5a;
+     width: 528px;
+     border-radius: 20px;
+     min-height: 187px;
+     padding: 10px;
+ }
+
+ .index-map {
+     position: relative;
+     margin-bottom: 15px;
+ }
+
+ .feedback {
+     position: absolute;
+     background-color: #ffffff;
+     top: 60px;
+     right: 27px;
+     font-size: 14px;
+     line-height: 20px;
+     color: #323232;
+     padding: 20px;
+     border-radius: 20px;
+ }
+
+ .map-tag {
+     position: absolute;
+     top: 140px;
+     left: 260px;
+ }
+
+ .footer {
+     position: relative;
+     font-size: 13px;
+     line-height: 18px;
+     color: #ffffff;
+ }
+
+ .footer a {
+     color: #ffffff;
+ }
+
+ .footer-social {
+     position: absolute;
+     top: 0;
+     left: 27px;
+ }
+
+ .footer-copyright {
+     position: absolute;
+     top: 0;
+     right: 27px;
+ }
+
+ .footer-info {
+     display: block;
+     width: 400px;
+     margin: 0 auto;
+ }
+
+ .footer-info-left {
+     float: left;
+ }
+
+ .footer-info-right {
+     float: right;
+ }
+
+.breadcrumps {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.breadcrumps a {
+    color: #ffffff;
+}
+
+ .filter {
+     margin-bottom: 35px;
+ }
+
+ .paginator {
+     margin-bottom: 25px;
+     float: right;
+     font-size: 16px;
+     line-height: 18px;
+ }
+
+ .paginator a {
+     color: #ffffff;
+     text-decoration: none;
+ }
+
+ hr {
+     margin-bottom: 20px;
+     background-color: #a9bbb1;
+     border: none;
+     height: 1px;
+ }
