@@ -21,9 +21,9 @@
         </nav>
         <div class="user-block">
          <ul class="hmenu">
-            <li><a href="#">Поиск</a></li>
-            <li><a href="#">Вход</a></li>
-            <li><a href="#">Пусто</a></li>
+            <li><a class="search" href="#">Поиск</a></li>
+            <li><a class="login" href="#">Вход</a></li>
+            <li><a class="basket" href="#">Пусто</a></li>
           </ul>
           <div class="user-info">
             <strong class="ui-time">С 10 до 20, ежедневно</strong><br>
@@ -61,29 +61,29 @@
           <article class="index-hit-item">
             <div class="ice"><img src="img/item-01.png" width="267" height="267" alt=""></div>
             <div class="hit"><img src="img/hit.png"></div>
-            <div class="price"><h3>310    /кг</h3></div>
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <div class="price"><h3>310 &#8381;/кг</h3></div>
+            <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
             <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
           </article>
           <article class="index-hit-item">
             <div class="ice"><img src="img/item-02.png" width="267" height="267"></div>
             <div class="hit"><img src="img/hit.png"></div>
-            <div class="price"><h3>380    /кг</h3></div>
-            <p>Сливочно-кофейное с кусочками шоколада</p>
+            <div class="price"><h3>380 &#8381;/кг</h3></div>
+            <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
             <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
           </article>
           <article class="index-hit-item">
             <div class="ice"><img src="img/item-03.png" width="267" height="267"></div>
             <div class="hit"><img src="img/hit.png"></div>
-            <div class="price"><h3>355    /кг</h3></div>
-            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <div class="price"><h3>355 &#8381;/кг</h3></div>
+            <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
             <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
           </article>
           <article class="index-hit-item">
             <div class="ice"><img src="img/item-04.png" width="267" height="267"></div>
             <div class="hit"><img src="img/hit.png"></div>
-            <div class="price"><h3>415    /кг</h3></div>
-            <p>Сливочное Крем-брюле с карамельной подливкой</p>
+            <div class="price"><h3>415 &#8381;/кг</h3></div>
+            <p><a href="#">Сливочное Крем-брюле с карамельной подливкой</a></p>
             <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
           </article>
         </section>
@@ -119,7 +119,7 @@
             <div class="inner-mail">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <form class="index-form" action="#" method="POST">
-                <input type="email" name="mail" value="" placeholder="Электронная почта">
+                <input class="email" type="email" name="mail" value="" placeholder="Электронная почта">
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -139,23 +139,23 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footer container">
+    <footer class="container">
+      <div class="footer">
         <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#"><img src="img/tw.png"></a><!--twitter-->
           <a class="social-btn social-btn-in" href="#"><img src="img/inst.png"></a><!--instagramm-->
           <a class="social-btn social-btn-fb" href="#"><img src="img/fb.png"></a><!--facebook-->
           <a class="social-btn social-btn-vk" href="#"><img src="img/vk.png"></a><!--vk--> 
         </section>
-        <section class="footer-info clearfix">
-          <div class="footer-info-left">
-            <a href="#">Для поставщиков</a><br>
-            <a href="#">О производстве</a>
-          </div>
-          <div class="footer-info-right">
-            <a href="#">Наши документы</a><br>
-            <a href="#">Экологические стандарты</a>
-          </div>
+        <section class="footer-info">
+          <ul class="footer-info-item footer-info-left">
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">Наши документы</a><br></li>
+          </ul>
+          <ul class="footer-info-item">
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
         </section>
         <section class="footer-copyright">
           <img src="img/ha-logo.png">
