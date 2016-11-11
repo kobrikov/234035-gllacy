@@ -49,13 +49,13 @@ a {
 
 .menu-item {
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     position: relative;
 }
 
 .menu-item > a {
     display: block;
-    padding: 10px 14px;
+    padding: 7px 14px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
@@ -84,7 +84,6 @@ a {
 .sub-menu {
     display: none;
     position: absolute;
-    top: 40px;
     padding: 0;
     left: -5px;
     background-color: #f8f7f4;
@@ -95,37 +94,48 @@ a {
 }
 
 .sub-menu li {
-    list-style: none;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    padding: 0 9px 0 6px;  
-    white-space: nowrap;
+    list-style: none;  
 }
 
 .sub-menu a {
     display: block;
-    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 8px 20px;
+    white-space: nowrap;
     color: #323232;
     text-decoration: none;
 }
 
-.sub-new {
-    font-weight: 700;
-    border-bottom: 1px solid rgba(53, 53, 53, 0.2); 
+.menu-item .sub-new {
+    font-weight: 700; 
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.sub-menu .sub-new::after {
+  content: "";
+  position: absolute;
+  right: 9px;
+  left: 6px;
+  bottom: 0;
+  height: 1px;
+  background-color: rgba(53, 53, 53, 0.2);
 }
 
 .menu-item:hover .sub-menu {
     display: block;
-    top: 45px;
+    top: 40px;
     left: -10px;
 }
 
-.sub-menu li:hover {
+.sub-menu a:hover {
   background-color: #fbded8;
 }
 
-.sub-menu li:active {
+.sub-menu a:active {
   background-color: #f6b5a5;
 }
 
@@ -143,12 +153,9 @@ a {
     color: #ffffff;
 }
 
-.sub-menu li.active {
+.sub-menu a.active {
     background-color: #d07058;
-}
-
-.active > a {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .menu-item > a.active::after {
