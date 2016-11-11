@@ -1,23 +1,19 @@
 body {
+    margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     color: #ffffff;
-    background-color: #9bafa4;
+    background-color: #849d8f;
 }
 
-h2 {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 60.35px;
-    margin-bottom: 29px;
+body > input[type="radio"] {
+  display: none;
 }
 
 a {
     color: #ffffff;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .container {
@@ -29,7 +25,9 @@ a {
 
 .index-logo {
     float: left;
-    margin-right: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: -5px;
 }
 
 .index-logo img {
@@ -39,14 +37,125 @@ a {
 
 .main-navigation {
     float: left;
+    padding: 0;
 }
 
-.main-navigation a {
+.main-menu {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+    margin-top: 20px;
+}
+
+.menu-item {
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.menu-item > a {
+    display: block;
+    padding: 10px 14px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    margin-right: 27px;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-decoration: none;
 }
+
+.menu-item > a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-item > a:hover::after {
+  background-color: #f7f6f3;
+}
+
+.menu-item:hover > a {
+    color: #333333;
+    text-decoration: none;
+    background-color: #f7f6f3;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    padding: 0;
+    left: -5px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.sub-menu li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 0 9px 0 6px;  
+    white-space: nowrap;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 10px 14px;
+    color: #323232;
+    text-decoration: none;
+}
+
+.sub-new {
+    font-weight: 700;
+    border-bottom: 1px solid rgba(53, 53, 53, 0.2); 
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+    top: 45px;
+    left: -10px;
+}
+
+.sub-menu li:hover {
+  background-color: #fbded8;
+}
+
+.sub-menu li:active {
+  background-color: #f6b5a5;
+}
+
+.menu-item > a:active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px dimgrey;
+}
+
+.menu-item > a:active::after {
+  background-color: #ededed;
+}
+
+.menu-item > a.active {
+    background-color: #d07058;
+    color: #ffffff;
+}
+
+.sub-menu li.active {
+    background-color: #d07058;
+}
+
+.active > a {
+    color: #ffffff; 
+}
+
+.menu-item > a.active::after {
+  display: none;
+}
+
+/*----*/
 
 .user-block {
     float: right;
@@ -96,24 +205,129 @@ a {
 .slider {
     position: relative;
     margin-bottom: 37px;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
 }
 
-.background {
+.wrapper {
     background-image: url("../img/icecream-main.png");
     background-repeat: no-repeat;
-    background-position: 50% 84px;
-    background-size: 647px 584px;
+    background-position: top center;
+    min-height: 100vh;
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+/* Псевдоэлементы с изображениями нужны только для предзагрузки картинок, чтобы они уже были в кеше в момент переключения слайдов и сразу отображались */
+
+.wrapper:before,
+.wrapper:after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.wrapper:before {
+  background-image: url("../img/icecream-main2.png");
+}
+
+.wrapper:after {
+  background-image: url("../img/icecream-main3.png");
+}
+
+/*---*/
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60.35px; 
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.slide-btn {
+  display: inline-block;
+  padding: 12px 50px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.slide-btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slide-btn:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .toggle {
     position: absolute;
     left: 0;
     bottom: 20px;
+    font-size: 0;
 }
 
-.promo {
-    margin-top: 275px;
-    text-align: center;
+.toggle label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .wrapper #slide1,
+#btn-2:checked ~ .wrapper #slide2,
+#btn-3:checked ~ .wrapper #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/icecream-main.png");
+}
+
+#btn-2:checked ~ .wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/icecream-main2.png");
+}
+
+#btn-3:checked ~ .wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/icecream-main3.png");
+}
+
+#btn-1:checked ~ .wrapper label[for="btn-1"],
+#btn-2:checked ~ .wrapper label[for="btn-2"],
+#btn-3:checked ~ .wrapper label[for="btn-3"] {
+  background-color: #ffffff;
 }
 
 .btn {
@@ -131,34 +345,42 @@ a {
     font-weight: 700;
 }
 
-.main-btn {
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: 700;
-    padding: 16px 40px;
-    border-radius: 40px;
+.banner {
+    margin-bottom: 37px;
 }
 
 .promo-banner-item {
-    width: 560px;
+    width: 520px;
 }
 
 .promo-left {
     float: left;
     background-image: url("../img/raspberry-back.png");
-    background-size: 560px 229px;
+    /*background-size: 520px 229px;*/
     border-radius: 20px;
+    padding: 20px;
 }
 
 .promo-right {
     float: right;
     background-image: url("../img/chocolate-back.png");
-    background-size: 560px 229px;
+    /*background-size: 520px 229px;*/
     border-radius: 20px;
+    padding: 20px;
 }
 
-.banner {
-    margin-bottom: 37px;
+.promo-name {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.promo-text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
 }
 
 .index-hit {
