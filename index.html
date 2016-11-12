@@ -34,7 +34,7 @@
             </ul>
           </nav>
           <div class="user-block">
-          <ul class="hmenu">
+          <ul class="user-menu">
               <li><a class="search" href="#">Поиск</a></li>
               <li><a class="login" href="#">Вход</a></li>
               <li><a class="basket" href="#">Пусто</a></li>
@@ -81,32 +81,40 @@
           </section>
           <section class="index-hit">
             <article class="index-hit-item">
-              <div class="ice"><img src="img/item-01.png" width="267" height="267" alt=""></div>
-              <div class="hit"><img src="img/hit.png"></div>
-              <div class="price"><h3>310 &#8381;/кг</h3></div>
-              <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-              <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
+              <div class="wrapper-icecream">
+                <div class="ice"><img src="img/item-01.png" width="267" height="267" alt=""></div>
+                <div class="hit"><img src="img/hit.png"></div>
+                <div class="price">310 &#8381;<span>/кг</span></div>
+                <p><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+                <a class="btn btn-view" href="#">Быстрый просмотр</a>
+              </div>
             </article>
             <article class="index-hit-item">
-              <div class="ice"><img src="img/item-02.png" width="267" height="267"></div>
-              <div class="hit"><img src="img/hit.png"></div>
-              <div class="price"><h3>380 &#8381;/кг</h3></div>
-              <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
-              <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
+              <div class="wrapper-icecream">
+                <div class="ice"><img src="img/item-02.png" width="267" height="267"></div>
+                <div class="hit"><img src="img/hit.png"></div>
+                <div class="price">380 &#8381;<span>/кг</span></div>
+                <p><a href="">Сливочно-кофейное с кусочками шоколада</a></p>
+                <a class="btn btn-view" href="#">Быстрый просмотр</a>
+              </div>
             </article>
             <article class="index-hit-item">
-              <div class="ice"><img src="img/item-03.png" width="267" height="267"></div>
-              <div class="hit"><img src="img/hit.png"></div>
-              <div class="price"><h3>355 &#8381;/кг</h3></div>
-              <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
-              <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
+              <div class="wrapper-icecream">
+                <div class="ice"><img src="img/item-03.png" width="267" height="267"></div>
+                <div class="hit"><img src="img/hit.png"></div>
+                <div class="price">355 &#8381;<span>/кг</span></div>
+                <p><a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+                <a class="btn btn-view" href="#">Быстрый просмотр</a>
+              </div>
             </article>
             <article class="index-hit-item">
-              <div class="ice"><img src="img/item-04.png" width="267" height="267"></div>
-              <div class="hit"><img src="img/hit.png"></div>
-              <div class="price"><h3>415 &#8381;/кг</h3></div>
-              <p><a href="#">Сливочное Крем-брюле с карамельной подливкой</a></p>
-              <a class="btn hide" href="#">Быстрый просмотр</a> <!-- при наведении -->
+              <div class="wrapper-icecream">
+                <div class="ice"><img src="img/item-04.png" width="267" height="267"></div>
+                <div class="hit"><img src="img/hit.png"></div>
+                <div class="price">415 &#8381;<span>/кг</span></div>
+                <p><a href="">Сливочное Крем-брюле с карамельной подливкой</a></p>
+                <a class="btn btn-view" href="#">Быстрый просмотр</a>
+              </div>
             </article>
           </section>
           <section class="features clearfix">
@@ -134,8 +142,8 @@
           </section>
           <section class="banner clearfix">
             <div class="index-new">
-              <h4>Новое в нашем блоге</h4>
-              <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+              <p>Новое в нашем блоге</p>
+              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </div>
             <div class="index-mail">
               <div class="inner-mail">
@@ -164,18 +172,18 @@
       <footer class="container">
         <div class="footer">
           <section class="footer-social">
-            <a class="social-btn social-btn-tw" href="#"><img src="img/tw.png"></a><!--twitter-->
-            <a class="social-btn social-btn-in" href="#"><img src="img/inst.png"></a><!--instagramm-->
-            <a class="social-btn social-btn-fb" href="#"><img src="img/fb.png"></a><!--facebook-->
-            <a class="social-btn social-btn-vk" href="#"><img src="img/vk.png"></a><!--vk--> 
+            <a class="social-btn social-btn-tw" href="#"></a>
+            <a class="social-btn social-btn-in" href="#"></a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-vk" href="#"></a>
           </section>
           <section class="footer-info">
             <ul class="footer-info-item footer-info-left">
-              <li><a href="#">Для поставщиков</a></li>
-              <li><a href="#">Наши документы</a><br></li>
+              <li><a class="for-prov" href="#">Для поставщиков</a></li>
+              <li><a href="#">О производстве</a></li>
             </ul>
             <ul class="footer-info-item">
-              <li><a href="#">О производстве</a></li>
+              <li><a href="#">Наши документы</a></li>
               <li><a href="#">Экологические стандарты</a></li>
             </ul>
           </section>
