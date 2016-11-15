@@ -34,9 +34,32 @@
             </ul>
           </nav>
           <div class="user-block">
-          <ul class="user-menu">
-              <li><a class="search" href="#">Поиск</a></li>
-              <li><a class="login" href="#">Вход</a></li>
+            <ul class="user-menu">
+              <li>
+                <a class="search" href="#">Поиск</a>
+                <div class="search-form">
+                  <form action="#" method="POST">
+                    <input type="search" name="search" placeholder="Что ищем?">
+                    <label class="hide-top"><span>Что ищем?<span></label>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a class="login" href="#">Вход</a>
+                <div class="login-form">
+                  <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <label class="hide-top"><span>Электронная почта<span></label>
+                    <input type="password" name="password" placeholder="Пароль">
+                    <label class="hide-top"><span>Пароль<span></label>
+                    <button class="btn btn-sign" type="submit" value="Войти">Войти</button>
+                    <div class="reg-links">
+                      <a href="">Забыли пароль?</a>
+                      <a href="">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </li>
               <li><a class="basket" href="#">Пусто</a></li>
             </ul>
             <div class="user-info">
@@ -71,74 +94,56 @@
             <article class="promo-banner-item promo-left">
               <p class="promo-name">Малинка даром!</p>
               <p class="promo-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="btn" href="#">Хочу варенье!</a>
+              <a class="btn btn-promo" href="#">Хочу варенье!</a>
             </article>
             <article class="promo-banner-item promo-right">
               <p class="promo-name">Шоколадки даром!</p>
               <p class="promo-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a class="btn" href="#">Хочу шоколадки!</a>
+              <a class="btn btn-promo" href="#">Хочу шоколадки!</a>
             </article>
           </section>
           <section class="index-hit">
             <article class="index-hit-item">
-              <div class="wrapper-icecream">
+              <div class="wrapper-icecream hit">
                 <div class="ice"><img src="img/item-01.png" width="267" height="267" alt=""></div>
-                <div class="hit"><img src="img/hit.png"></div>
                 <div class="price">310 &#8381;<span>/кг</span></div>
                 <p><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
                 <a class="btn btn-view" href="#">Быстрый просмотр</a>
               </div>
             </article>
             <article class="index-hit-item">
-              <div class="wrapper-icecream">
+              <div class="wrapper-icecream hit">
                 <div class="ice"><img src="img/item-02.png" width="267" height="267"></div>
-                <div class="hit"><img src="img/hit.png"></div>
                 <div class="price">380 &#8381;<span>/кг</span></div>
                 <p><a href="">Сливочно-кофейное с кусочками шоколада</a></p>
                 <a class="btn btn-view" href="#">Быстрый просмотр</a>
               </div>
             </article>
             <article class="index-hit-item">
-              <div class="wrapper-icecream">
+              <div class="wrapper-icecream hit">
                 <div class="ice"><img src="img/item-03.png" width="267" height="267"></div>
-                <div class="hit"><img src="img/hit.png"></div>
                 <div class="price">355 &#8381;<span>/кг</span></div>
                 <p><a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
                 <a class="btn btn-view" href="#">Быстрый просмотр</a>
               </div>
             </article>
             <article class="index-hit-item">
-              <div class="wrapper-icecream">
+              <div class="wrapper-icecream hit">
                 <div class="ice"><img src="img/item-04.png" width="267" height="267"></div>
-                <div class="hit"><img src="img/hit.png"></div>
                 <div class="price">415 &#8381;<span>/кг</span></div>
                 <p><a href="">Сливочное Крем-брюле с карамельной подливкой</a></p>
                 <a class="btn btn-view" href="#">Быстрый просмотр</a>
               </div>
             </article>
           </section>
-          <section class="features clearfix">
-            <p class="features-name">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-            <div class="features-left">
-              <div class="features-item clearfix">
-                <img src="img/seo-01.png" width="49" height="49" alt="">
-                <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-              </div>
-              <div class="features-item">
-                <img src="img/seo-02.png" width="49" height="49" alt="">
-                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-              </div>
-            </div>
-            <div class="features-right">
-              <div class="features-item">
-                <img src="img/seo-03.png" width="49" height="49" alt="">
-                <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-              </div>
-              <div class="features-item">
-                <img src="img/seo-04.png" width="49" height="49" alt="">
-                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-              </div>
-            </div>
+          <section class="features">
+            <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+              <ul class="features-list">
+                <li class="features-item feature-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+                <li class="features-item feature-cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+                <li class="features-item feature-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+                <li class="features-item feature-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+              </ul>
           </section>
           <section class="banner clearfix">
             <div class="index-new">
@@ -150,14 +155,16 @@
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <form class="index-form" action="#" method="POST">
                   <input class="email" type="email" name="mail" value="" placeholder="Электронная почта">
-                  <button class="btn" type="submit">Отправить</button>
+                  <button class="btn btn-mail" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
           </section>
           <div class="index-map">
-            <img src="img/map.jpg" width="1200" height="430" alt="карта главного офиса">
-            <div class="map-tag"><img src="img/map-tag.png" width="218" height="142" alt="метка главного офиса"></div>
+            <div id="yandex-map">
+              <!--<img src="img/map.jpg" width="1200" height="430" alt="карта главного офиса">-static-->
+            </div>
+            <!--<div class="map-tag"><img src="img/map-tag.png" width="218" height="142" alt="метка главного офиса"></div>-->
             <div class="feedback">
               <h4>Адрес главного офиса и<br>офлайн магазина:</h4>
               <p> ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
@@ -194,5 +201,6 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JhkHWiBufV6gasoswLii_FLVrKoL9yER&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map"></script>
   </body>
 </html>

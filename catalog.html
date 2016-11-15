@@ -30,10 +30,57 @@
             </ul>
           </nav>
           <div class="user-block">
-          <ul class="user-menu">
-              <li><a class="search" href="#">Поиск</a></li>
-              <li><a class="login" href="#">Вход</a></li>
-              <li><a class="basket basket-buy" href="#">2 Товара</a></li>
+            <ul class="user-menu">
+              <li>
+                <a class="search" href="#">Поиск</a>
+                <div class="search-form">
+                  <form action="#" method="POST">
+                    <input type="search" name="search" placeholder="Что ищем?">
+                    <label class="hide-top"><span>Что ищем?<span></label>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a class="login" href="#">Вход</a>
+                <div class="login-form">
+                  <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <label class="hide-top"><span>Электронная почта<span></label>
+                    <input type="password" name="password" placeholder="Пароль">
+                    <label class="hide-top"><span>Пароль<span></label>
+                    <button class="btn btn-sign" type="submit" value="Войти">Войти</button>
+                    <div class="reg-links">
+                      <a href="">Забыли пароль?</a>
+                      <a href="">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a class="basket basket-buy" href="#">2 товара</a>
+                <div class="basket-form">
+                  <div class="position">
+                    <ul class="position-item">
+                      <li><i class="del"></i></li>
+                      <li><img src="img/item-01.png" width="33" height="33" alt=""></li>
+                      <li class="name">Пломбир с апельсиновым джемом</li>
+                      <li class="calc">1,5кг x <span>200 руб.</span></li>
+                      <li class="total">300руб.</li>
+                    </ul>
+                    <ul class="position-item">
+                      <li><i class="del"></i></li>
+                      <li><img src="img/item-05.png" width="33" height="33" alt=""></li>
+                      <li class="name">Клубничный пломбир с присыпкой  из белого шоколада</li>
+                      <li class="calc">1,5кг x <span>300 руб.</span></li>
+                      <li class="total">450руб.</li>
+                    </ul>
+                  </div>
+                  <div class="basket-total">
+                    <p>Итого: 750 руб.</p>
+                    <button class="btn btn-order" type="submit" value="Войти">Оформить заказ</button>
+                  </div>
+                </div>
+                </li>
             </ul>
             <div class="user-info">
               <strong class="ui-time">С 10 до 20, ежедневно</strong><br>
@@ -44,42 +91,61 @@
       </header>
 		<main>
       <div class="container">
-        <div class="breadcrumps">
-          <ul class="hmenu">
-            <li><a href="#">Главная</a></li>
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог</a></li>
-            <li><a href="#">Сливочное</a></li>
+            <li>Сливочное</li>
           </ul>
         </div>
-        <h1>Сливочное мороженое</h1>
-        <section class="filter">
-          <form action="#" method="GET">
-            <ul class="hmenu">
-              <li>
-                <label for="filter-sort-id">Сортировка:</label><br>
-                <select name="filter-sort" id="filter-sort-id">
-                  <option value="popular">по популярности</option>
-                </select>
-              </li>
-              <li>
-                <label for="filter-price-id">Цена: 100 руб. - 500 руб.</label><br>
-                <input type="range" name="filter-price" id="filter-price-id" multiple>
-              </li>
-              <li>
-                <label for="filter-fat-id">Жирность:</label><br>
-                <input type="radio" name="filter-fat" id="filter-fat-id" value="0">0%
-                <input type="radio" name="filter-fat" id="filter-fat-id" value="10">до 10%
-                <input type="radio" name="filter-fat" id="filter-fat-id" value="30">до 30%
-                <input type="radio" name="filter-fat" id="filter-fat-id" value="100">выше 30%
-              </li>
-            </ul>
-            <label for="filter-check-id">Наполнители:</label><br>
-            <input type="checkbox" name="chocolate" id="filter-check-id" checked>шоколадные
-            <input type="checkbox" name="sugar" id="filter-check-id">сахарные присыпки
-            <input type="checkbox" name="fruit" id="filter-check-id">фрукты
-            <input type="checkbox" name="syrop" id="filter-check-id">сиропы
-            <input type="checkbox" name="jam" id="filter-check-id">джемы
-            <button type="submit">Применить</button>
+        <h1 class="hcatalog">Сливочное мороженое</h1>
+        <section class="filters">
+          <form class="filters-form" action="#" method="GET">
+            <fieldset class="filter-category">
+              <legend>Сортировка:</legend>
+              <select class="sort">
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fatness">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset class="filter-category">
+              <legend>Цена: 100 руб. – 500 руб.</legend>
+              <div class="feature-wrapper">
+                <input type="range" min="100" max="500" step="10" value="150">
+                <input class="second-range" type="range" min="100" max="500" step="10" value="500">
+              </div>
+            </fieldset>
+            <fieldset class="filter-category nowrap">
+              <legend>Жирность:</legend>
+              <div class="feature-wrapper">
+                <input name="fatness" type="radio" value="0" id="zero">
+                <label for="zero">0%</label>
+                <input name="fatness" type="radio" value="10" id="ten" checked>
+                <label for="ten">до 10%</label>
+                <input name="fatness" type="radio" value="30" id="thirty">
+                <label for="thirty">до 30%</label>
+                <input name="fatness" type="radio" value="more 30" id="more-thirty">
+                <label for="more-thirty">выше 30%</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-category">
+              <legend>Наполнители:</legend>
+              <div class="feature-wrapper">
+                <input type="checkbox" value="шоколадные" id="chocolate" checked>
+                <label for="chocolate">шоколадные</label>
+                <input type="checkbox" value="сахарные присыпки" id="sugar" checked>
+                <label for="sugar">сахарные присыпки</label>
+                <input type="checkbox" value="фрукты" id="fruit">
+                <label for="fruit">фрукты</label>
+                <input type="checkbox" value="сиропы" id="syrup">
+                <label for="syrup">сиропы</label>
+                <input type="checkbox" value="джемы" id="jam">
+                <label for="jam">джемы</label>
+              </div>
+            </fieldset>
+            <button class="filter-button" type="submit" value="Применить">Применить</button>
           </form>
         </section>
         <section class="index-hit">
@@ -180,18 +246,19 @@
             </div>
           </article>
         </section>
-        <div class="clearfix">
-          <div class="paginator">
-            <a href="#">Назад</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">Вперед</a>
+        <div class="pag-wrap clearfix">
+          <div class="">
+            <ul class="paginator">
+              <li>&lsaquo;</li>
+              <li class="paginator-active">1</li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a class="paginator-next" href="#">&rsaquo;</a></li>
+            </ul>
           </div>
         </div>
-        <hr>
       </div>
 		</main>
 		<footer class="container">
