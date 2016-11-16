@@ -40,8 +40,10 @@
                 <a class="search" href="#">Поиск</a>
                 <div class="search-form">
                   <form action="#" method="POST">
-                    <input type="search" name="search" placeholder="Что ищем?">
-                    <label class="hide-top"><span>Что ищем?<span></label>
+                    <label class="hide-top">
+                      <input type="search" name="search" placeholder="Что ищем?">
+                      <span>Что ищем?<span>
+                    </label>
                   </form>
                 </div>
               </li>
@@ -49,10 +51,14 @@
                 <a class="login" href="#">Вход</a>
                 <div class="login-form">
                   <form action="#" method="POST">
-                    <input type="email" name="email" placeholder="Электронная почта">
-                    <label class="hide-top"><span>Электронная почта<span></label>
-                    <input type="password" name="password" placeholder="Пароль">
-                    <label class="hide-top"><span>Пароль<span></label>
+                    <label class="hide-top">
+                      <input type="email" name="email" placeholder="Электронная почта">
+                      <span>Электронная почта<span>
+                    </label>
+                    <label class="hide-top">
+                      <input type="password" name="password" placeholder="Пароль">
+                      <span>Пароль<span>
+                    </label>
                     <button class="btn btn-sign" type="submit" value="Войти">Войти</button>
                     <div class="reg-links">
                       <a href="">Забыли пароль?</a>
@@ -155,8 +161,10 @@
               <div class="inner-mail">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <form class="index-form" action="#" method="POST">
-                  <input class="email" type="email" name="mail" value="" placeholder="Электронная почта">
-                  <label class="hide-top"><span>Электронная почта</span></label>
+                  <label class="hide-top">
+                    <input class="email" type="email" name="mail" value="" placeholder="Электронная почта">
+                    <span>Электронная почта</span>
+                  </label>
                   <button class="btn btn-mail" type="submit">Отправить</button>
                 </form>
               </div>
@@ -205,12 +213,18 @@
       <h3>Мы обязательно вам ответим!</h3>
       <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
       <form action="#" method="post">
-        <input type="text" name="popup-name" placeholder="Как вас зовут?" required>
-        <label class="hide-top"><span>Как вас зовут?</span></label>
-        <input type="email" name="popup-email" placeholder="Ваша почта для ответа?" required>
-        <label class="hide-top"><span>Ваша почта для ответа?</span></label>
-        <textarea name="popup-message" placeholder="Напишите что-нибудь..." required></textarea>
-        <label class="hide-top"><span>Напишите что-нибудь...</span></label>
+        <label class="hide-top">
+          <input type="text" name="popup-name" placeholder="Как вас зовут?" required>
+          <span>Как вас зовут?</span>
+        </label>
+        <label class="hide-top">
+          <input type="email" name="popup-email" placeholder="Ваша почта для ответа?" required>
+          <span>Ваша почта для ответа?</span>
+        </label>
+        <label class="hide-top">
+          <textarea name="popup-message" placeholder="Напишите что-нибудь..." required></textarea>
+          <span>Напишите что-нибудь...</span>
+        </label>
         <button class="btn site-button">Отправить</button>
       </form>
     </div>
