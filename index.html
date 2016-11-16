@@ -156,23 +156,21 @@
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <form class="index-form" action="#" method="POST">
                   <input class="email" type="email" name="mail" value="" placeholder="Электронная почта">
+                  <label class="hide-top"><span>Электронная почта</span></label>
                   <button class="btn btn-mail" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
           </section>
           <div class="index-map">
-            <div id="yandex-map">
-              <!--<img src="img/map.jpg" width="1200" height="430" alt="карта главного офиса">-static-->
-            </div>
-            <!--<div class="map-tag"><img src="img/map-tag.png" width="218" height="142" alt="метка главного офиса"></div>-->
+            <div id="yandex-map"></div>
             <div class="feedback">
               <h4>Адрес главного офиса и<br>офлайн магазина:</h4>
               <p> ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
               <h4>Для заказов по телефону:</h4>
               <p>8 812 450-25-25</p>
               <span>(с 10 до 20 ежедневно)</span><br>
-              <button class="btn" type="submit">Форма обратной связи</button>
+              <button class="btn btn-feedback" type="submit">Форма обратной связи</button>
             </div>
           </div>
         </div>
@@ -202,6 +200,21 @@
         </div>
       </footer>
     </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-feedback">
+      <h3>Мы обязательно вам ответим!</h3>
+      <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+      <form action="#" method="post">
+        <input type="text" name="popup-name" placeholder="Как вас зовут?" required>
+        <label class="hide-top"><span>Как вас зовут?</span></label>
+        <input type="email" name="popup-email" placeholder="Ваша почта для ответа?" required>
+        <label class="hide-top"><span>Ваша почта для ответа?</span></label>
+        <textarea name="popup-message" placeholder="Напишите что-нибудь..." required></textarea>
+        <label class="hide-top"><span>Напишите что-нибудь...</span></label>
+        <button class="btn site-button">Отправить</button>
+      </form>
+    </div>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JhkHWiBufV6gasoswLii_FLVrKoL9yER&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map"></script>
+    <script src="js/feedback.js"></script>
   </body>
 </html>
