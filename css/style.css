@@ -542,11 +542,16 @@ img {
 .index-hit-item {
   position: relative;
   display: inline-block;
-  width: 267px;
-  margin-right: 26px;
+  width: 23.35%;
+  margin-right: 2.2%;
   font-size: 16px;
   text-align: center;
   vertical-align: top;
+}
+
+.index-hit-item img {
+  width: 100%;
+  border-radius: 50%
 }
 
 .wrapper-icecream {
@@ -632,7 +637,7 @@ img {
 
 .price {
   position: absolute;
-  top: 210px;
+  top: 205px;
   font-size: 45px;
   line-height: 45px; 
   font-weight: 700;
@@ -804,8 +809,8 @@ img {
 .feedback {
   position: absolute;
   top: 62px;
-  right: 2.3%;
-  padding: 10px 18px 10px 28px;
+  right: 27px;
+  padding: 10px 22px 10px 22px;
   font-size: 14px;
   line-height: 20px;
   border-radius: 10px;
@@ -830,7 +835,7 @@ img {
 }
 
 .feedback .btn {
-  margin: 25px 8px 20px 0;
+  margin: 25px 15px 20px 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -839,17 +844,16 @@ img {
 /*---*/
 
 .footer {
-  position: relative;
-  padding-top: 7px;
+  padding-top: 10px;
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .footer-social {
-  position: absolute;
-  top: 10px;
-  left: 0;
+  float: left;
+  width: 25%;
 }
 
 .social-btn {
@@ -889,12 +893,17 @@ img {
 }
 
 .footer-copyright {
-  position: absolute;
-  top: -7px;
-  right: -2px;
+  width: 25%;
+  margin-top: -15px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  float: right;
+  text-align: right;
+}
+
+.footer-copyright img {
+  margin-right: 80px;
 }
 
 .footer-copyright p {
@@ -902,9 +911,10 @@ img {
 }
 
 .footer-info {
+  display: inline-block;
   margin: 0 auto;
-  padding-left: 0px;
   text-align: center;
+  width: 50%;
 }
 
 .footer-info-item {
@@ -1005,7 +1015,7 @@ img {
 /*---*/
 
 .pag-wrap {
-  margin-top: 7px;
+  margin-top: 3px;
   margin-bottom: 25px;
   border-bottom: 1px solid #a9bbb1;
 }
