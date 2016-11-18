@@ -463,10 +463,10 @@ img {
   padding: 10px 22px;
   color: #ffffff;
   background-color: #e74b36;
-  border: 0px;
+  border: 0;
   border-radius: 20px;
   background: linear-gradient(0deg, #e74b36, #f26843);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -494,25 +494,25 @@ img {
 }
 
 .promo-banner-item {
+  width: 48.9%;
   min-height: 229px;
-  padding: 0 20px;
   border-radius: 10px;
-  text-align: right;
-  width: 45.2%;
 }
 
 .promo-left {
   float: left;
   background: #9b2a4a url("../img/raspberry-back.jpg");
+  text-align: right;
 }
 
 .promo-right {
   float: right;
   background: #512f21 url("../img/chocolate-back.jpg");
+  text-align: right;
 }
 
 .promo-name {
-  margin: 15px 0 0 0;
+  margin: 15px 20px 0 20px;
   padding: 0;
   font-size: 35px;
   line-height: 41px;
@@ -521,6 +521,8 @@ img {
 }
 
 .promo-text {
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -530,6 +532,7 @@ img {
 .btn-promo {
   margin-top: 22px;  
   margin-bottom: 22px;
+  margin-right: 20px;
 }
 
 /*---*/
@@ -549,9 +552,13 @@ img {
   vertical-align: top;
 }
 
-.index-hit-item img {
+.ice {
+  position: relative;
+}
+
+.ice img {
   width: 100%;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .wrapper-icecream {
@@ -602,9 +609,9 @@ img {
 .btn-view {
   color: #ffffff;
   background: linear-gradient(0deg, #e74b36, #f26843);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   border-radius: 20px;
-  border: 0px;
+  border: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -629,6 +636,7 @@ img {
   height: 61px;
   width: 61px;
   background-image: url("../img/hit.png");
+  z-index: 10;
 }
 
 .hit::before {
@@ -637,7 +645,7 @@ img {
 
 .price {
   position: absolute;
-  top: 205px;
+  bottom: 15px;
   font-size: 45px;
   line-height: 45px; 
   font-weight: 700;
@@ -722,17 +730,15 @@ img {
 
 .index-new {
   float: left;
-  width: 520px;
-  min-height: 204px;
-  padding: 8px 20px;
+  min-height: 220px;
   border-radius: 10px;
-  background: #ffffff url("../img/strawberry-back.jpg");
-  width: 45.2%; 
+  background: #ffffff url("../img/strawberry-back.jpg"); 
 }
 
 .index-new p {
-  margin-bottom: 0;
-  padding-bottom: 5px;
+  margin-left: 20px;
+  margin-top: 23px;
+  margin-bottom: 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -740,8 +746,9 @@ img {
 }
 
 .index-new a {
+  margin: 0 20px 5px 20px;
+  width: 330px;
   display: block;
-  max-width: 285px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -757,28 +764,36 @@ img {
 .index-mail {
   float: right;
   padding: 6px;
-  width: 548px;
-  min-height: 208px;
+  box-sizing: border-box;
+  min-height: 220px;
   border-radius: 10px;
   background: #f8f7f4 url("../img/mail-back.jpg");
-  width: 47.85%;
 }
 
 .inner-mail {
-  border-radius: 10px;
-  color: #5a5a5a;
-  background-color: #f8f7f4;
-  padding-left: 20px;
+ border-radius: 10px;
+ color: #5a5a5a;
+ background-color: #f8f7f4;
 }
 
 .inner-mail p {
   margin: 0;
-  padding: 28px 20px 35px 0;
+  padding: 28px 20px 0 20px;
+  min-height: 100px;
+}
+
+.inner-mail .index-form {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 141px;
+  padding-bottom: 35px;
 }
 
 .email {
-  width: 340px;
-  margin: 0 7px 35px 0 ;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid #d3d3d3;
   font-size: 16px;
@@ -787,12 +802,14 @@ img {
 }
 
 .btn-mail {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 10px 15px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-left: 20px; 
 }
 
 /*---*/
@@ -894,7 +911,7 @@ img {
 
 .footer-copyright {
   width: 25%;
-  margin-top: -15px;
+  margin-top: -17px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -1295,7 +1312,7 @@ li.calc span {
 
 .position-item .total {
   margin-left: 30px;
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .basket-total {
@@ -1381,6 +1398,13 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
   cursor: pointer;
   -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  width: 22px;
+  height: 22px;
+  margin-top: -9px;
+  margin-left: -1px;
 }
 
 .filters-form select {
@@ -1563,6 +1587,13 @@ input[type=range]:focus::-ms-fill-upper {
   background: #ffffff;
 }
 
+input[type=range]::-ms-thumb:hover {
+  width: 22px;
+  height: 22px;
+  margin-top: -9px;
+  margin-left: -1px;
+}
+
 /*стилизация range для FF*/
 input[type=range]::-moz-range-track {
   width: 100%;
@@ -1578,6 +1609,13 @@ input[type=range]::-moz-range-thumb {
   border-radius: 50%;
   cursor: pointer;
   -moz-appearance: none;
+}
+
+input[type=range]::-moz-range-thumb:hover {
+  width: 22px;
+  height: 22px;
+  margin-top: -9px;
+  margin-left: -1px;
 }
 
 /*---*/
@@ -1630,7 +1668,7 @@ input[type=range]::-moz-range-thumb {
 
 .popup-close {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 15px;
   width: 17px;
   height: 17px;
@@ -1695,8 +1733,7 @@ input[type=range]::-moz-range-thumb {
   position: relative;
   font-size: 0;
   color: #5b9ddf;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
 }
 
 .hide-top span {
@@ -1707,7 +1744,7 @@ input[type=range]::-moz-range-thumb {
 
 .popup-feedback .hide-top span {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 15px;
 }
 
