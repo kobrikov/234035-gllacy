@@ -51,3 +51,29 @@ window.addEventListener("keydown", function (event) {
 		}
 	}
 });
+
+//карта с меткой макета
+ymaps.ready(function () {
+    var myMap = new ymaps.Map("map", {
+            center: [59.93931499, 30.32940030],
+            zoom: 16
+        }, {
+            searchControlProvider: "yandex#search"
+        }),
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
+            hintContent: "Gllacy Shop",
+            balloonContent: "Ice Cream Shop"
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/map-tag.png',
+            // Размеры метки.
+            iconImageSize: [218, 142],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-40, -139]
+        });
+    myMap.geoObjects.add(myPlacemark);
+});
